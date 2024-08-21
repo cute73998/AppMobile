@@ -16,7 +16,7 @@ namespace animation
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new picture1());
+            Application.Run(new form1());
         }
     }
 }

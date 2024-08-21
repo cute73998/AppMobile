@@ -12,17 +12,18 @@ using OpenCvSharp.Extensions;
 
 namespace animation
 {
-    public partial class picture1 : Form
+    public partial class form1 : Form
     {
-        private VideoCapture capture;
-        private Mat frame;
-        private Bitmap image;
-        public picture1()
+        private VideoCapture capture; //Đối tượng để kết nối với nguồn video (webcam).
+        private Mat frame; // Lưu trữ khung hình video từ webcam dưới dạng ma trận hình ảnh.
+        private Bitmap image; //Đối tượng hình ảnh có thể hiển thị trên form, được chuyển đổi từ Mat.
+        public form1()
         {
             InitializeComponent();
             capture = new VideoCapture(0); // Kết nối với webcam, 0 là ID mặc định của webcam
             frame = new Mat();  // Khởi tạo một Mat để lưu trữ khung hình từ webcam
             Application.Idle += ProcessFrame; // Xử lý khung hình khi ứng dụng rảnh
+            Console.WriteLine();
         }
         private void ProcessFrame(object sender, EventArgs e)
         {

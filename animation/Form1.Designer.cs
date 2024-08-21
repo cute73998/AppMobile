@@ -1,6 +1,6 @@
 ﻿namespace animation
 {
-    partial class picture1
+    partial class form1
     {
         /// <summary>
         /// Required designer variable.
@@ -34,19 +34,19 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(-4, 5);
+            this.pictureBox1.Location = new System.Drawing.Point(2, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(863, 449);
+            this.pictureBox1.Size = new System.Drawing.Size(847, 442);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // picture1
+            // form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(861, 466);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "picture1";
+            this.Name = "form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
